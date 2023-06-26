@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>Boolfolio</title>
+        <title>Boolfolio - Api</title>
 
         {{-- Favicon --}}
         <link rel="shortcut icon" href="/logo-small.png" type="png">

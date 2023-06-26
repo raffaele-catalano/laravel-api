@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Boolfolio</title>
+    <title>Boolfolio - Api</title>
 
     {{-- Favicon --}}
     <link rel="shortcut icon" href="/logo-small.png" type="png">
