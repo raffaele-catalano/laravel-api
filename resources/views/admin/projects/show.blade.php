@@ -24,7 +24,7 @@
             @forelse ( $project->technologies as $technology )
                 <img class="logos" src="{{ '/technologies/' . $technology->slug . '.png' }}" alt="{{ $technology->name }}">
             @empty
-                <span>undefined</span>
+                <span class="mb-2 text-danger fw-bold">undefined</span>
             @endforelse
         </div>
 
