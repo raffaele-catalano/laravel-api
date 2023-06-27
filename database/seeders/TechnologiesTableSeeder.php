@@ -7,6 +7,7 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Str;
 
+
 class TechnologiesTableSeeder extends Seeder
 {
     /**
@@ -21,12 +22,15 @@ class TechnologiesTableSeeder extends Seeder
             'CSS',
             'Javascript',
             'Vue',
-            'Vite',
             'SCSS',
             'NodeJS',
             'PHP',
             'SQL',
             'Laravel',
+            'MySQL',
+            'C#',
+            'Typescript',
+            'Java'
         ];
 
         foreach ($project_technologies as $technology) {

@@ -138,7 +138,10 @@
                             checked
                         @endif
                         >
-                    <label class="btn btn-outline-primary" for="technology{{$loop->iteration}}">{{ $technology->name }}</label>
+                    {{-- <label class="btn btn-outline-primary" for="technology{{$loop->iteration}}">{{ $technology->name }}</label> --}}
+                    <label class="btn btn-outline-primary" for="technology{{$loop->iteration}}">
+                        <img class="logos w-75" src="{{ '/technologies/' . $technology->slug . '.png' }}" alt="{{ $technology->name }}">
+                    </label>
                 @endforeach
 
                     </div>

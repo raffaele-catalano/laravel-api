@@ -40,11 +40,13 @@
                         <td class="text-capitalize">{{ $project->category }}</td>
                         <td class="text-center"><span class="badge text-bg-info text-uppercase">{{ $project->type?->name ?? 'undefined' }}</span></td>
                         <td class="text-center">
-                        @forelse ( $project->technologies as $technology )
-                            <span class="badge text-bg-warning text-uppercase">{{ $technology->name }}</span>
-                        @empty
-                            <span>undefined</span>
-                        @endforelse
+                            <div class="tech-container d-flex justify-content-center">
+                                @forelse ( $project->technologies as $technology )
+                                    <img class="logos" src="{{ '/technologies/' . $technology->slug . '.png' }}" alt="{{ $technology->name }}">
+                                @empty
+                                    <span>undefined</span>
+                                @endforelse
+                            </div>
                         </td>
                         <td>{{ $project->is_closed ? 'Closed' : 'Ongoing' }}</td>
                         <td>
