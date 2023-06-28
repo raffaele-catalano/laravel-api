@@ -22,9 +22,10 @@
         <h5 class="text-primary">Technology:</h5>
         <div class="tech-container d-flex justify-content-center">
             @forelse ( $project->technologies as $technology )
-                <img class="logos" src="{{ '/technologies/' . $technology->slug . '.png' }}" alt="{{ $technology->name }}">
+                <img class="logos" src="{{ '/technologies/' . $technology->slug . '.png' }}" alt="{{ $technology->name }}" title="{{ $technology->name }}">
             @empty
-                <span class="mb-2 text-danger fw-bold">undefined</span>
+                {{-- <span class="mb-2 text-danger fw-bold">undefined</span> --}}
+                <span class="badge text-bg-danger mb-2">Undefined</span>
             @endforelse
         </div>
 

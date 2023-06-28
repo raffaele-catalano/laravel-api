@@ -25,7 +25,7 @@ class TechnologiesTableSeeder extends Seeder
             'SCSS',
             'NodeJS',
             'PHP',
-            'SQL',
+            'Python',
             'Laravel',
             'MySQL',
             'C#',

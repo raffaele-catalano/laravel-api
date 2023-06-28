@@ -42,9 +42,9 @@
                         <td class="text-center">
                             <div class="tech-container d-flex justify-content-center">
                                 @forelse ( $project->technologies as $technology )
-                                    <img class="logos" src="{{ '/technologies/' . $technology->slug . '.png' }}" alt="{{ $technology->name }}">
+                                    <img class="logos" src="{{ '/technologies/' . $technology->slug . '.png' }}" alt="{{ $technology->name }}" title="{{ $technology->name }}">
                                 @empty
-                                    <img class="logos" src="/undefined.png">
+                                    <img class="logos" src="/undefined.png" alt="undefined" title="undefined">
                                 @endforelse
                             </div>
                         </td>
