@@ -37,7 +37,9 @@ class LeadController extends Controller
                 return response()->json(compact('success', 'errors'));
             }
 
-        return response()->json($data);
+        $success = true;
+
+        return response()->json(compact('success'));
 
     }
 }
