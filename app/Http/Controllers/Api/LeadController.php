@@ -6,6 +6,8 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use App\Models\Lead;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\NewContact;
 
 class LeadController extends Controller
 {
@@ -42,7 +44,7 @@ class LeadController extends Controller
         $new_lead->fill($data);
         $new_lead->save();
 
-        // Mail::to('pierdo.guarnieri@gmail.com')->send(new NewContact($new_lead));
+        Mail::to('info@boolfolio.com')->send(new NewContact($new_lead));
 
         $success = true;
 
